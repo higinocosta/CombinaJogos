@@ -69,7 +69,7 @@ public class FXMLTelaUnicaController implements Initializable {
 			
 		}
 		
-		// Desenhando telas
+		// Esse é o bicho
 		vGeral.setVisible(true);
 		vGeral.setCacheShape(true);
 	}
