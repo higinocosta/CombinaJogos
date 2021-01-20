@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="apPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="534.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="telas.controller.FXMLTelaUnicaController">
+   <children>
+      <AnchorPane fx:id="apMenu" prefHeight="380.0" prefWidth="130.0" style="-fx-background-color: #696969;">
+         <children>
+            <ImageView fx:id="imLotoFacil" fitHeight="23.0" fitWidth="93.0" layoutX="17.0" layoutY="15.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/lotofacil.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imMegaSena" fitHeight="21.0" fitWidth="93.0" layoutX="17.0" layoutY="64.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/MegaSena.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imDuplaSena" fitHeight="19.0" fitWidth="93.0" layoutX="17.0" layoutY="111.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/Duplasena.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imQuina" fitHeight="23.0" fitWidth="93.0" layoutX="16.0" layoutY="157.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/Quina.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imLotoMania" fitHeight="23.0" fitWidth="93.0" layoutX="17.0" layoutY="207.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/Lotomania.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imTimeMania" fitHeight="18.0" fitWidth="93.0" layoutX="17.0" layoutY="256.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/Timemania.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imSair" fitHeight="23.0" fitWidth="31.0" layoutX="52.0" layoutY="305.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/Sair.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="apJogos" layoutX="140.0" prefHeight="66.0" prefWidth="394.0" style="-fx-background-color: #9FB6CD;">
+         <children>
+            <Label layoutX="15.0" layoutY="10.0" text="Quantidade de dezenas" />
+            <TextField fx:id="tfQtdDezenas" layoutX="161.0" layoutY="6.0" prefHeight="25.0" prefWidth="52.0" />
+            <Label layoutX="15.0" layoutY="38.0" text="Dezenas por volante" />
+            <TextField fx:id="tfDezenasVolante" layoutX="161.0" layoutY="34.0" prefHeight="25.0" prefWidth="52.0" />
+            <Button layoutX="321.0" layoutY="16.0" mnemonicParsing="false" text="Button" />
+         </children></AnchorPane>
+      <VBox fx:id="vGeral" alignment="CENTER" fillWidth="false" layoutX="140.0" layoutY="70.0" prefHeight="313.0" prefWidth="350.0" style="-fx-background-color: #647083;" />
+      <ProgressBar fx:id="barAndamento" layoutX="359.0" layoutY="204.0" prefHeight="40.0" prefWidth="310.0" progress="0.0" rotate="270.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,17 @@
+Plano de estruturação das pastas/arquivos:
+
+
+	Application
+		principal
+		
+	
+	Telas
+		controller
+		fxml
+		imagens
+		
+
+	resources
+		combinacao
+		desdobramento
+		
